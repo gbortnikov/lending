@@ -1,0 +1,26 @@
+{
+  "name": "ULIMIT-DEFI",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "forge build",
+    "test": "forge test",
+    "solhint": "npx solhint 'contracts/**/*.sol'",
+    "coverage-report": "forge coverage --report lcov && genhtml lcov.info --branch-coverage --output-dir coverage"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts-upgradeable": "^5.0.2",
+    "@uniswap/swap-router-contracts": "^1.2.1",
+    "@uniswap/v3-core": "github:Uniswap/v3-core#0.8",
+    "@uniswap/v3-periphery": "github:Uniswap/v3-periphery",
+    "forge-std": "github:foundry-rs/forge-std"
+  },
+  "devDependencies": {
+    "i": "^0.3.7",
+    "npm": "^10.8.0",
+    "solhint-plugin-prettier": "^0.1.0"
+  }
+}
